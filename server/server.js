@@ -23,7 +23,7 @@ app.listen(3000, function(){
 });
 
 app.get('/api/drones', (req, res) => {
-  const url = 'https://api.dronestre.am/data';
+  const url = 'http://api.dronestre.am/data';
 
   fetch(url)
     .then(jsonData => jsonData.json())

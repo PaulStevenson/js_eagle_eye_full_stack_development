@@ -13,7 +13,6 @@ Drones.prototype.getData = function () {
   const handleRequest = (responseData) => {
     this.dronesData = responseData;
     PubSub.publish('Drones:data-ready', this.dronesData);
-
   }
 
   request.get()

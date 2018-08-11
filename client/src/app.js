@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
 const dronesUrl ='http://localhost:3000/api/drones'
 const drones = new Drones(dronesUrl);
+console.log(drones);
 drones.getData();
 
 
